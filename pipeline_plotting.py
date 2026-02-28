@@ -31,11 +31,16 @@ identities = list(set(identities))
 
 
 def pipeline_plotting(df_lab, df_crism, df_ratio):
+    """
+    This function is a pipeline that (eventually) plots how I want it to.
+    - plotting: takes the fixed lab/CRISM data and makes the correct graphs.
+    """
     plotting(df_lab, df_crism, df_ratio)
     plt.show()
 
 
 def plotting(df_lab, df_crism, df_ratio):
+    # explain later
     figures = []
     for column in df_crism:
         y_max = 0
